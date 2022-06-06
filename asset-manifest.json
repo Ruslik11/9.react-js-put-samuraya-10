@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "https://ruslik11.github.io/9.react-js-put-samuraya-10/static/css/main.c40b2570.css",
-    "main.js": "https://ruslik11.github.io/9.react-js-put-samuraya-10/static/js/main.4549eb4a.js",
-    "static/css/208.a24434db.chunk.css": "https://ruslik11.github.io/9.react-js-put-samuraya-10/static/css/208.a24434db.chunk.css",
-    "static/js/208.82dc02df.chunk.js": "https://ruslik11.github.io/9.react-js-put-samuraya-10/static/js/208.82dc02df.chunk.js",
-    "static/css/165.7aec7289.chunk.css": "https://ruslik11.github.io/9.react-js-put-samuraya-10/static/css/165.7aec7289.chunk.css",
-    "static/js/165.5ab551f5.chunk.js": "https://ruslik11.github.io/9.react-js-put-samuraya-10/static/js/165.5ab551f5.chunk.js",
-    "index.html": "https://ruslik11.github.io/9.react-js-put-samuraya-10/index.html",
-    "main.c40b2570.css.map": "https://ruslik11.github.io/9.react-js-put-samuraya-10/static/css/main.c40b2570.css.map",
-    "main.4549eb4a.js.map": "https://ruslik11.github.io/9.react-js-put-samuraya-10/static/js/main.4549eb4a.js.map",
-    "208.a24434db.chunk.css.map": "https://ruslik11.github.io/9.react-js-put-samuraya-10/static/css/208.a24434db.chunk.css.map",
-    "208.82dc02df.chunk.js.map": "https://ruslik11.github.io/9.react-js-put-samuraya-10/static/js/208.82dc02df.chunk.js.map",
-    "165.7aec7289.chunk.css.map": "https://ruslik11.github.io/9.react-js-put-samuraya-10/static/css/165.7aec7289.chunk.css.map",
-    "165.5ab551f5.chunk.js.map": "https://ruslik11.github.io/9.react-js-put-samuraya-10/static/js/165.5ab551f5.chunk.js.map"
+    "main.css": "/9.react-js-put-samuraya-10/static/css/main.c40b2570.css",
+    "main.js": "/9.react-js-put-samuraya-10/static/js/main.520e5e61.js",
+    "static/css/208.a24434db.chunk.css": "/9.react-js-put-samuraya-10/static/css/208.a24434db.chunk.css",
+    "static/js/208.82dc02df.chunk.js": "/9.react-js-put-samuraya-10/static/js/208.82dc02df.chunk.js",
+    "static/css/165.7aec7289.chunk.css": "/9.react-js-put-samuraya-10/static/css/165.7aec7289.chunk.css",
+    "static/js/165.5ab551f5.chunk.js": "/9.react-js-put-samuraya-10/static/js/165.5ab551f5.chunk.js",
+    "index.html": "/9.react-js-put-samuraya-10/index.html",
+    "main.c40b2570.css.map": "/9.react-js-put-samuraya-10/static/css/main.c40b2570.css.map",
+    "main.520e5e61.js.map": "/9.react-js-put-samuraya-10/static/js/main.520e5e61.js.map",
+    "208.a24434db.chunk.css.map": "/9.react-js-put-samuraya-10/static/css/208.a24434db.chunk.css.map",
+    "208.82dc02df.chunk.js.map": "/9.react-js-put-samuraya-10/static/js/208.82dc02df.chunk.js.map",
+    "165.7aec7289.chunk.css.map": "/9.react-js-put-samuraya-10/static/css/165.7aec7289.chunk.css.map",
+    "165.5ab551f5.chunk.js.map": "/9.react-js-put-samuraya-10/static/js/165.5ab551f5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c40b2570.css",
-    "static/js/main.4549eb4a.js"
+    "static/js/main.520e5e61.js"
   ]
 }
