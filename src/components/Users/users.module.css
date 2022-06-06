@@ -1,0 +1,22 @@
+.userPhoto {
+  width: 100px;
+  height: 100px;
+  object-fit: cover; }
+
+.userBoxing {
+  display: flex;
+  flex-flow: row wrap; }
+
+.userBox {
+  flex: 0 0 calc(25% - 22px);
+  display: flex;
+  flex-flow: row nowrap;
+  overflow: hidden;
+  margin: 10px;
+  border: 1px solid #fff;
+  background-color: aquamarine; }
+  .userBox button {
+    border: none;
+    background-color: yellow; }
+  .userBox a {
+    display: block; }

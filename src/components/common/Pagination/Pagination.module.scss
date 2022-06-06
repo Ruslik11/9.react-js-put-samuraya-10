@@ -1,0 +1,27 @@
+.pagination {
+  margin: 10px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  span {
+    margin: 5px;
+    padding: 5px 10px;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+  }
+
+  .selectedPage {
+    pointer-events: none;
+    background-color: #fff;
+    font-weight: 600;
+    color: #000;
+  }
+  .dotdotdot {
+    border: none;
+    cursor: default;
+    pointer-events: none;
+  }
+}
