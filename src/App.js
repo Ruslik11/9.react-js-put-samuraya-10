@@ -1,7 +1,7 @@
 import React from "react";
 import {compose} from "redux";
 import {connect, Provider} from "react-redux";
-import {HashRouter, Route, withRouter} from "react-router-dom";
+import {BrowserRouter, HashRouter, Redirect, Route, Switch, withRouter} from "react-router-dom";
 import HeaderContainer from "./components/Header/HeaderContainer";
 import UsersContainer from "./components/Users/UsersContainer";
 import LoginPage from "./components/Login/Login";
@@ -18,9 +18,21 @@ const DialogsContainer = React.lazy(() => import('./components/Dialogs/DialogsCo
 const ProfileContainer = React.lazy(() => import('./components/Profile/ProfileContainer'));
 
 class App extends React.Component {
+
+    catchAllUnhandledErrors = (reason, promise) => {
+        alert("Some error occured");
+        // console.error(promiseRejectionEvent)
+    };
+
     componentDidMount() {
-        this.props.initializeApp()
+        this.props.initializeApp();
+        window.addEventListener('unhandledrejection', this.catchAllUnhandledErrors)
     }
+
+    componentWillUnmount() {
+        window.removeEventListener('unhandledrejection', this.catchAllUnhandledErrors)
+    }
+
     render() {
         if (!this.props.initialized) return <Preloader />;
 
@@ -29,10 +41,14 @@ class App extends React.Component {
                 <HeaderContainer />
                 <NavBar />
                 <div className='app-wrapper-content'>
-                    <Route path='/dialogs' render={WithSuspense(DialogsContainer)} />
-                    <Route path='/profile/:userId?' render={WithSuspense(ProfileContainer)} />
-                    <Route path='/users' render={() => <UsersContainer />} />
-                    <Route path='/login' render={() => <LoginPage />} />
+                    <Switch>
+                        <Route exact path='/' render={() => <Redirect to='/profile' />} />
+                        <Route path='/dialogs' render={WithSuspense(DialogsContainer)} />
+                        <Route path='/profile/:userId?' render={WithSuspense(ProfileContainer)} />
+                        <Route path='/users' render={() => <UsersContainer />} />
+                        <Route path='/login' render={() => <LoginPage />} />
+                        <Route path='*' render={() => <div>404 Page</div>} />
+                    </Switch>
                 </div>
             </div>
         )
@@ -48,11 +64,11 @@ let AppContainer = compose(
     connect(mapStateToProps, {initializeApp}))(App);
 
 let SamuraiJSApp = () => {
-    return <HashRouter>
+    return <BrowserRouter>
         <Provider store={store}>
             <AppContainer />
         </Provider>
-    </HashRouter>
+    </BrowserRouter>
 };
 
 export default SamuraiJSApp;
